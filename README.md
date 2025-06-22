@@ -7,6 +7,7 @@
 - Deprecation: [Kaboom.js is now Kaplay](https://jslegenddev.substack.com/p/kaboomjs-is-now-kaplay)
 - [Kaplay library](https://www.npmjs.com/package/kaplay)
 - Fonts: [monogram](https://datagoblin.itch.io/monogram)
+- Tiled software: <https://mapeditor.org>
 
 ## Init the Project
 
