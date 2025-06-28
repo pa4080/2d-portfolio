@@ -9,6 +9,8 @@
 - Fonts: [monogram](https://datagoblin.itch.io/monogram)
 - Tiled software: <https://mapeditor.org>
 
+<https://youtu.be/wy_fSStEgMs?si=3KZOx3SNON7MPqi9&t=1424>
+
 ## Init the Project
 
 ```bash
