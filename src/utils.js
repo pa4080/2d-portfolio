@@ -36,3 +36,21 @@ export function displayDialogue(text, onDisplayEnd) {
 
   closeBtn.addEventListener('click', onCloseBtnClick);
 }
+
+export function closeDialogue() {
+  const closeBtn = document.getElementById('close');
+  closeBtn.click();
+}
+
+/**
+ * @param {KaplayCtx} kCtx
+ */
+export function setCamScale(kCtx) {
+  const resizeFactor = kCtx.width() / kCtx.height();
+
+  if (resizeFactor < 1) {
+    return kCtx.camScale(kCtx.vec2(1));
+  }
+
+  kCtx.camScale(kCtx.vec2(1.5));
+}
