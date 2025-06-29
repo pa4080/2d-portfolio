@@ -1,3 +1,5 @@
+import { TITLE_DEFAULT, TITLE_PREFIX, TITLES } from './constants';
+
 /**
  * @param {string} text
  * @param {function} onDisplayEnd
@@ -30,11 +32,19 @@ export function displayDialogue(text, onDisplayEnd) {
     onDisplayEnd();
     dialogueUi.style.display = 'none';
     dialogue.innerHTML = '';
+    document.title = TITLE_DEFAULT;
     clearInterval(intervalRef);
     closeBtn.removeEventListener('click', onCloseBtnClick);
   }
 
   closeBtn.addEventListener('click', onCloseBtnClick);
+}
+
+/**
+ * @param {string} titleKey
+ */
+export function setPageTitle(titleKey) {
+  document.title = `${TITLE_PREFIX} ${TITLES[titleKey]}`;
 }
 
 export function closeDialogue() {

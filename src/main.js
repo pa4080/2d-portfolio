@@ -1,6 +1,6 @@
 import { DIALOGUE_DATA, SCALE_FACTOR } from './constants.js';
 import { kCtx } from './kaplay-ctx.js';
-import { closeDialogue, displayDialogue, setCamScale } from './utils.js';
+import { closeDialogue, displayDialogue, setCamScale, setPageTitle } from './utils.js';
 
 kCtx.loadSprite('spritesheet', './spritesheet.png', {
   sliceX: 39,
@@ -57,6 +57,7 @@ kCtx.scene('main', async () => {
           player.onCollide(boundary.name, () => {
             player.isInDialogue = true;
             displayDialogue(DIALOGUE_DATA[boundary.name], () => (player.isInDialogue = false));
+            setPageTitle(boundary.name);
           });
         }
       }

@@ -1,5 +1,20 @@
 export const SCALE_FACTOR = 3;
 
+export const TITLE_DEFAULT = 'SZS 2D Portfolio';
+export const TITLE_PREFIX = 'SZS';
+
+export const TITLES = {
+  pc: 'PC',
+  'cs-degree': 'CS Degree',
+  'sofa-table': 'Sofa Table',
+  tv: 'TV',
+  bed: 'Bed',
+  resume: 'Resume',
+  projects: 'Projects',
+  library: 'Library',
+  exit: 'Exit',
+};
+
 export const DIALOGUE_DATA = {
   pc: `This is my PC. I work mostly in JavaScript/TypeScript these days.
     I've made a couple of projects in that language. Anyway regardless of the language, I just like programming. Here is my <a href="https://www.spasov.me/portfolio" target="_blank">Portfolio page</a>!`,
