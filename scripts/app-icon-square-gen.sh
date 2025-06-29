@@ -6,13 +6,13 @@
 # Requirements: sudo apt install imagemagick
 
 # LOGO_SOURCE_FILE="assets/icons/svg/mlt.logo.orange.svg"
-LOGO_SOURCE_FILE="assets/icons/svg/spasov.me.logo.svg"
+LOGO_SOURCE_FILE="assets/icons/svg/2d-game-portfolio.svg"
 LOGO_DEST_DIRECTORY="assets/icons"
 
 # FAVICON_SOURCE_FILE="assets/icons/svg/mlt.favicon.orange.svg"
-FAVICON_SOURCE_FILE="assets/icons/svg/spasov.me.logo.svg"
-FAVICON_ICO_DEST_DIRECTORY="app/"
-FAVICON_SVG_DEST_DIRECTORY="assets/"
+FAVICON_SOURCE_FILE="assets/icons/svg/2d-game-portfolio.svg"
+FAVICON_ICO_DEST_DIRECTORY="public/"
+FAVICON_SVG_DEST_DIRECTORY="public/"
 
 # Generate app-icons
 for res in 192 512; do
