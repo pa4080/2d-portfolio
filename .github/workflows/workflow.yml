@@ -20,6 +20,9 @@ jobs:
       - name: Checkout # https://github.com/actions/checkout
         uses: actions/checkout@v3
 
+      - name: Install pnpm
+        run: npm install -g pnpm@latest-10
+
       - name: Install and build
         run: pnpm install && pnpm run predeploy
 
